@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lagomorph Games</title>
+<meta name="description" content="Lagomorph Games is an independent game studio. Our website is coming soon.">
+<meta name="theme-color" content="#FDFAF4">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://lagomorph.gg/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lagomorph.gg/">
+<meta property="og:site_name" content="Lagomorph Games">
+<meta property="og:title" content="Lagomorph Games">
+<meta property="og:description" content="An independent game studio. Website coming soon.">
+<meta property="og:image" content="https://lagomorph.gg/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lagomorph Games logo: a clockwork rabbit with brass goggles">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --bg: #FDFAF4;      /* sampled from the logo's own background, so the image has no visible edge */
+    --ink: #3E2C1F;     /* wordmark brown */
+    --olive: #5F6240;   /* "GAMES" olive */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh 1.25rem 2rem;
+    text-align: center;
+  }
+  h1 { margin: 0; line-height: 0; }
+  h1 img {
+    width: min(86vw, 520px, 62vh);
+    height: auto;
+  }
+  .soon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.75rem 0 0;
+    color: var(--olive);
+    font-size: 0.95rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+  }
+  /* letter-spacing trails the last glyph; pull it back so both rules sit the same distance from the text */
+  .soon span { margin-right: -0.32em; }
+  .soon::before, .soon::after {
+    content: "";
+    width: 3.25rem;
+    height: 1px;
+    background: var(--olive);
+    opacity: 0.7;
+  }
+  .contact { margin: 1.1rem 0 0; font-size: 1.05rem; }
+  a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(62, 44, 31, 0.3);
+    transition: border-color 0.15s ease;
+  }
+  a:hover, a:focus-visible { border-bottom-color: var(--ink); }
+  a:focus-visible { outline: 2px solid var(--olive); outline-offset: 4px; border-radius: 2px; }
+  footer {
+    padding: 1.5rem 1rem 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(62, 44, 31, 0.6);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <h1>
+      <picture>
+        <source srcset="/logo.webp" type="image/webp">
+        <img src="/logo.jpg" width="1040" height="1040" alt="Lagomorph Games">
+      </picture>
+    </h1>
+    <p class="soon"><span>Coming soon</span></p>
+    <p class="contact"><a href="mailto:hello@lagomorph.gg">hello@lagomorph.gg</a></p>
+  </main>
+  <footer>&copy; 2026 Lagomorph Games, Inc.</footer>
+</body>
+</html>
